@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,500;1,600&display=swap');
+
+body{
+    background: rgb(36, 36, 36);
+    color: #fff;
+    line-height: 20px;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+p{
+    font-family: 'IBM Plex Serif', serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.conteiner{
+    margin: 0 auto;
+}
+
+nav{
+    margin: 50px 0;
+    background: rgb(146, 0, 231);
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li{
+    display: inline-block;
+    background:  rgb(146, 0, 231);
+}
+
+nav a{
+    display: block;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+nav a:hover{
+    background: #000;
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover>ul{
+    display: inherit;
+}
+
+nav ul ul li{
+    width: 175px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 175px;
+}
+
+li>a::after{
+    content: '+';
+}
+
+li>a:only-child::after{
+    content: '';
+}
